@@ -1,0 +1,21 @@
+.rounded{
+  width: "304";
+  height:"236";
+}
+
+.p {
+  text-align: center;
+  padding-top: 120px;
+}
+.row content{
+  text-align: center;
+}
+
+.p a {
+  text-decoration: underline;
+  color: blue;
+}
+h1{
+  text-align: left;
+  box-sizing: round;
+}
