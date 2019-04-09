@@ -1,0 +1,55 @@
+
+.section {
+    padding: 100px 0;
+}
+
+@media (max-width: 991px) {
+    .section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        padding: 40px 0;
+    }
+}
+
+.section-overlay {
+    position: relative;
+}
+
+.section-overlay-in {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.bg-cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-center-center {
+    background-position: center center;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+
+}
+
+
+
+.
