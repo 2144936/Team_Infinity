@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rookie Cookery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/card.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</head>
+
+<body class="bg-no-repeat bg-cover bg-center-center bg-fixed" style="background-image: url(./images/bg1.jpg);">
+     <nav class="navbar navbar-expand-sm p-3 bg-secondary text-white">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/new.png" alt="logo" height=70 style="width:150px;">
+        </a>
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <!-- Dropdowns -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="recipe.html" id="navbardrop" data-toggle="dropdown">Recipe</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="pork.html">Pork </a>
+                    <a class="dropdown-item" href="chicken.html">Chicken</a>
+                    <a class="dropdown-item" href="seafood.html">Seafood</a>
+                    <a class="dropdown-item" href="pasta.html">Pasta</a>
+                    <a class="dropdown-item" href="beef.html">Beef</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="search.html">Search Recipes</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="search" class="section section-overlay">
+       
+        <div>
+
+            <div class="container">
+                <center>
+                    <input id="searchBox" class="input is-rounded is-focused clearable is-info" type="text" placeholder="Search for recipe" size="50" title="">
+
+                    <button id="searchBtn" class="button is-info" type="submit" onclick=getSearch();>Search</button>
+                </center>
+                
+                 <div class='result'></div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

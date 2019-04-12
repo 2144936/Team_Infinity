@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rookie Cookery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/card.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-sm p-3 bg-secondary text-white">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/new.png" alt="logo" height=70 style="width:150px;">
+        </a>
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <!-- Dropdowns -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="recipe.html" id="navbardrop" data-toggle="dropdown">Recipe</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="pork.html">Pork </a>
+                    <a class="dropdown-item" href="chicken.html">Chicken</a>
+                    <a class="dropdown-item" href="seafood.html">Seafood</a>
+                    <a class="dropdown-item" href="pasta.html">Pasta</a>
+                    <a class="dropdown-item" href="beef.html">Beef</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="search.html">Search Recipes</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/pork.jpg" alt="Pork" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Pork</h3>
+                    <p>We have a great recipe for Pork</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/chicken.jpg" alt="roasted chicken" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Roasted Chicken</h3>
+                    <p>Try our some recipe for chicken</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/seafoods.jpg" alt="seafood" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Lagoon Seafoood</h3>
+                    <p>Have a great taste!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/pasta.jpg" alt="pasta" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Pasta</h3>
+                    <p>Have a long live!</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- insert here -->
+
+<div class="container">
+  <h2> Greek Tortellini Skillet </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/beef/1.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 package (19 ounces) frozen cheese tortellini<br>
+            1 pound ground beef<br>
+            1 medium zucchini, sliced<br>
+            1 small red onion, chopped<br>
+            3 cups marinara or spaghetti sauce<br>
+            1/2 cup water<br>
+            1/4 teaspoon pepper<br>
+            2 medium tomatoes, chopped<br>
+            1/2 cup cubed feta cheese<br>
+            1/2 cup pitted Greek olives, halved<br>
+            2 tablespoons minced fresh basil, divided<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Cook tortellini according to package directions. Meanwhile, in a large skillet, cook the beef, zucchini and onion over medium heat until meat is no longer pink; drain.
+          </p>
+          <p>
+            Drain tortellini; add to skillet. Stir in the marinara sauce, water and pepper. Bring to a boil. Reduce heat; simmer, uncovered, for 5 minutes. Add the tomatoes, cheese, olives and 1 tablespoon basil. Sprinkle with remaining basil.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Beef Broccoli Stir-Fry</h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/beef/2.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1/2 teaspoon garlic powder<br>
+            3 tablespoon cornstarch, divided<br>
+            2 tablespoons plus 1/2 cup water, divided<br>
+            1 pound boneless beef top round steak, cut into thin 2-inch strips<br>
+            1/4 cup soy sauce<br>
+            2 tablespoons brown sugar<br>
+            1 teaspoon ground ginger<br>
+            2 tablespoons canola oil, divided<br>
+            4 cups fresh broccoli florets<br>
+            1 small onion, cut into thin wedges<br>
+            Hot cooked rice<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Mix garlic powder and 2 tablespoons each cornstarch and water; toss with beef. In a small bowl, mix soy sauce, brown sugar, ginger and the remaining cornstarch and water until smooth.
+          </p>
+          <p>
+            In a large skillet, heat 1 tablespoon oil over medium-high heat; stir-fry beef until browned, 2-3 minutes. Remove from pan.
+          </p>
+          <p>
+            In same pan, stir-fry broccoli and onion in remaining oil over medium-high heat until crisp-tender, 4-5 minutes. Stir soy sauce mixture; add to pan. Cook and stir until thickened, 1-2 minutes. Return beef to pan; heat through. Serve with rice.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Beefsteak (Filipino Style) </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/beef/3.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 1/2 lbs beef sirloin thinly sliced<br>
+            5 tablespoons soy sauce<br>
+            4 pieces calamansi or 1-piece lemon<br>
+            1/2 tsp ground black pepper<br>
+            3 cloves garlic minced<br>
+            3 pieces yellow onion sliced into rings<br>
+            4 tablespoons cooking oil<br>
+            1 cup water<br>
+            1 pinch salt<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Marinate beef in soy sauce, lemon (or calamansi), and ground black pepper for at least 1 hour. Note: marinate overnight for best result.
+          </p>
+          <p>
+           Heat the cooking oil in a pan then pan-fry half of the onions until the texture becomes soft. Set aside.
+          </p>
+          <p>
+           Drain the marinade from the beef. Set it aside. Pan-fry the beef on the same pan where the onions were fried for 1 minute per side. Remove from the pan. Set aside.
+          </p>
+          <p>
+           Add more oil if needed. Saute garlic and remaining raw onions until onion softens. 5.    Pour the remaining marinade and water. Bring to a boil.
+          </p>
+          <p>
+            Add beef. Cover the pan and simmer until meat is tender. Note: Add water as needed.
+          </p>
+          <p>
+           Season with ground black pepper and salt as needed. Top with pan-fried onions.
+          </p>
+          <p>
+           Transfer to a serving plate. Serve hot. Share and Enjoy
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Beef Burgundy Stew </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/beef/4.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            3 pounds beef stew meat<br>
+            2 cups red wine<br>
+            2 tablespoons butter<br>
+            2 tablespoons olive oil<br>
+            1 yellow onion, coarsely chopped<br>
+            2 large carrots, sliced<br>
+            3 garlic cloves, chopped<br>
+            2 teaspoons chopped fresh thyme<br>
+            1 tablespoon all-purpose flour<br>
+            2 teaspoons table salt<br>
+            1 teaspoon freshly ground black pepper<br>
+            1/4 to 1/2 cup beef broth<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Place meat and wine in a medium bowl; chill 1 hour. Remove meat using a slotted spoon; reserve wine in a small saucepan. Pat meat dry with paper towels.
+          </p>
+          <p>
+            Cook reserved wine over medium-high heat, stirring occasionally, 15 minutes or until reduced to 1 cup.
+          </p>
+          <p>
+            Melt butter with oil in a Dutch oven over medium-high heat; add meat, and cook 5 minutes, stirring to brown all sides. Add onion and next 3 ingredients, and cook, stirring often, 15 minutes or until vegetables and meat are cooked. Sprinkle flour over meat mixture, and cook, stirring constantly, 1 minute. Stir in reduced wine, salt, pepper, and 1/4 cup beef broth. Cover and reduce heat to low; simmer, stirring occasionally, 2 hours, adding up to 1/2 cup beef broth if needed.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Red Wine Beef Stew </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/beef/5.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 (4-lb.) boneless chuck roast, trimmed<br>
+            4 tablespoons flour, divided<br>
+            1 3/4 teaspoons salt, divided<br>
+            1 teaspoon paprika<br>
+            1/2 teaspoon pepper<br>
+            2 tablespoons vegetable oil<br>
+            1 cup dry red wine<br>
+            2 (14 1/2-oz.) cans low-sodium beef broth<br>
+            1/2 teaspoon dried thyme<br>
+            1 bay leaf<br>
+            1 small turnip<br>
+            1 (8-oz.) package fresh mushrooms<br>
+            1 (16-oz.) package baby carrots<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Cut beef into 2- to 2 1/2-inch pieces; pat with paper towels to absorb excess moisture. Combine 3 Tbsp. flour, 1 tsp. salt, paprika, and pepper in a bowl; toss beef with flour mixture.
+          </p>
+          <p>
+           Cook beef, in batches, in hot oil in a Dutch oven over medium-high heat, stirring often, 4 to 6 minutes or until brown. Remove beef from Dutch oven. Add red wine, stirring to loosen particles from bottom of Dutch oven. Return beef to Dutch oven; add broth, thyme, bay leaf, and 1/2 tsp. salt. Bring to a boil. Cover, reduce heat to low, and cook, stirring occasionally, 1 hour.
+          </p>
+          <p>
+           Meanwhile, peel turnip, and cut into 1-inch cubes. Halve mushrooms. Add turnip, mushrooms, and carrots to stew. Cover and cook, stirring occasionally, 1 to 1 1/2 hours or until meat is fork-tender.
+          </p>
+          <p>
+           Whisk together remaining 1 Tbsp. flour and 1/4 tsp. salt until blended; whisk 1/2 cup hot broth into flour mixture until smooth. Whisk flour mixture into stew until smooth. Cook, stirring often, 20 minutes or until thickened.
+          </p>
+          <p>
+           Beef broth may be substituted.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Beef and Guinness Stew </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/beef/6.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            3 tablespoons canola oil, divided<br>
+            1/4 cup all-purpose flour<br>
+            2 pounds boneless chuck roast, trimmed and cut into 1-inch cubes<br>
+            1 teaspoon salt, divided<br>
+            5 cups chopped onion (about 3 onions)<br>
+            1 tablespoon tomato paste<br>
+            4 cups fat-free, lower-sodium beef broth<br>
+            1 (11.2-ounce) bottle Guinness Stout<br>
+            1 tablespoon raisins<br>
+            1 teaspoon caraway seeds<br>
+            1/2 teaspoon black pepper<br>
+            1 1/2 cups (1/2-inch-thick) diagonal slices carrot (about 8 ounces)<br>
+            1 1/2 cups (1/2-inch-thick) diagonal slices parsnip (about 8 ounces)<br>
+            1 cup (1/2-inch) cubed peeled turnip (about 8 ounces)<br>
+            2 tablespoons finely chopped fresh flat-leaf parsley<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Heat 1 1/2 tablespoons oil in a Dutch oven over medium-high heat. Place flour in a shallow dish. Sprinkle beef with 1/2 teaspoon salt; dredge beef in flour. Add half of beef to pan; cook 5 minutes, turning to brown on all sides. Remove beef from pan with a slotted spoon. Repeat procedure with remaining 1 1/2 tablespoons oil and beef.
+          </p>
+          <p>
+            Add onion to pan; cook 5 minutes or until tender, stirring occasionally. Stir in tomato paste; cook 1 minute, stirring frequently. Stir in broth and beer, scraping pan to loosen browned bits. Return meat to pan. Stir in remaining 1/2 teaspoon salt, raisins, caraway seeds, and pepper; bring to a boil. Cover, reduce heat, and simmer 1 hour, stirring occasionally. Uncover and bring to a boil. Cook 50 minutes, stirring occasionally. Add carrot, parsnip, and turnip. Cover, reduce heat to low, and simmer 30 minutes, stirring occasionally. Uncover and bring to a boil; cook 10 minutes or until vegetables are tender. Sprinkle with parsley.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Paprika Short-rib Beef Stew </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/beef/7.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1/2 cup flour<br>
+            2 tablespoons hot paprika<br>
+            2 teaspoons pimentón (smoked Spanish paprika; see Notes)<br>
+            About 1 1/2 tsp. salt, divided<br>
+            About 1 tsp. freshly ground black pepper<br>
+            4 pounds bone-in beef short ribs<br>
+            4 strips thick-cut bacon<br>
+            1 medium onion, chopped<br>
+            4 cloves garlic, finely chopped<br>
+            1 bottle (12 oz.) beer<br>
+            1 can (14.5 oz.) whole peeled tomatoes, chopped and juices reserved<br>
+            2 pounds Yukon Gold or russet potatoes<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Preheat oven to 300°. Combine flour, hot paprika, smoked paprika, 1 tsp. salt, and 1 tsp. pepper in a large bowl or large resealable plastic bag. Working in batches of 2 or 3, toss short ribs with flour mixture. 
+          </p>
+          <p>
+            In a large Dutch oven or other heavy ovenproof pot over medium-high heat, cook bacon until fat renders. Transfer bacon with a slotted spoon to paper towels and reserve. Pour off all but 1 tbsp. fat from pot. Add short ribs and brown on all sides, 3 to 5 minutes per side.
+          </p>
+          <p>
+            Chop reserved bacon and set aside. Transfer short ribs to a plate and reserve. Add onion and 1/2 tsp. salt to pot and cook, stirring, until softened, about 3 minutes. Add garlic and cook, stirring, until fragrant, about 1 minute. Add beer and, using a wooden spoon or spatula, scrape up any browned bits on the bottom of the pan. Add tomatoes and their juices and reserved bacon. Increase heat to high and bring mixture to a boil. Return short ribs to pot, cover, and bake two hours. 
+          </p>
+          <p>
+            Peel potatoes and cut into 1-in. pieces. Add to short ribs, cover, and bake until potatoes are tender and meat pulls away easily from the bone, about 30 minutes. Add salt and pepper to taste. Spoon off excess fat and serve hot.
+          </p>
+          <p>
+            Note: Nutritional analysis is per serving.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Italian Beef Stew </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/beef/8.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            7 teaspoons olive oil, divided<br>
+            1 1/2 cups chopped onion<br>
+            1/2 cup chopped carrot<br>
+            1 tablespoon minced garlic<br>
+            1/4 cup all-purpose flour<br>
+            2 pounds boneless chuck roast, trimmed and cut into cubes<br>
+            3/4 teaspoon salt, divided<br>
+            1/2 teaspoon black pepper<br>
+            1 cup dry red wine<br>
+            3 3/4 cups chopped seeded peeled plum tomato (about 2 pounds)<br>
+            1 1/2 cups fat-free, lower-sodium beef broth<br>
+            1/2 cup water<br>
+            2 teaspoons chopped fresh oregano<br>
+            2 teaspoons chopped fresh thyme<br>
+            1 bay leaf<br>
+            1 (8-ounce) package cremini mushrooms, quartered<br>
+            3/4 cup (1/4-inch-thick) slices carrot<br>
+            2 tablespoons chopped fresh basil<br>
+            1 tablespoon chopped parsley<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Heat a Dutch oven over medium-high heat. Add 1 teaspoon oil to pan. Add onion and chopped carrot; sauté 8 minutes, stirring occasionally. Add garlic; sauté for 45 seconds, stirring constantly. Remove from pan. 
+          </p>
+          <p>
+            Add 1 tablespoon oil to pan. Place 1/4 cup flour in a shallow dish. Sprinkle beef with 1/2 teaspoon salt and pepper; dredge in flour. Add half of beef to pan; sauté 6 minutes, browning on all sides. Remove from pan. Repeat procedure. 
+          </p>
+          <p>
+            Add wine to pan, and bring to a boil, scraping pan. Cook until reduced to 1/3 cup (about 5 minutes). Return meat and the onion mixture to pan. Add tomato and next 6 ingredients; bring to a boil. Cover, reduce heat, and simmer for 45 minutes, stirring occasionally. Uncover, and stir in sliced carrot. Simmer, uncovered, for 1 hour or until meat is very tender, stirring occasionally. Discard bay leaf. Stir in remaining 1/4 teaspoon salt, basil, and parsley.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Crock Pot Beef Stew </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/beef/9.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            2 pounds chuck roast<br>
+            1 vadalia onion<br>
+            1 clove garlic minced<br>
+            1 teaspoon salt<br>
+            1/2 teaspoon pepper<br>
+            1 1/2 teaspoons paprika<br>
+            1/4 teaspoon thyme<br>
+            1 bay leaf<br>
+            1 teaspoon cinnamon<br>
+            1 cup red wine<br>
+            1 can tomatoes petite cut 16 oz<br>
+            1 can tomato sauce 8 oz<br>
+            carrots sliced<br>
+            mushroom sliced<br>
+            celery chopped<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Cut chuck roast into 1 1/2 x 1 1/2 cubes
+          </p>
+          <p>
+           Slice vegetables
+          </p>
+          <p>
+            Add tomato sauce, petite cut tomatoes and red wine to crock pot
+          </p>
+          <p>
+            Mix in dry ingredients
+          </p>
+          <p>
+           Add meat
+          </p>
+          <p>
+            Add vegetables
+          </p>
+          <p>
+            Cook in crock pot on low for 6-10 hours. Add vegetables later if y ou prefer crisper and firmer veggies. The cut of meat will effect the tenderness of the meat.
+          </p>
+          <p>
+            Delicious and easy. Set it and forget it. Great served over mashed potatoes or wide egg noodles.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Balsamic Steak Salad </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/beef/10.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1/4 cup balsamic vinegar<br>
+            1/4 cup olive oil<br>
+            2 teaspoons lemon juice<br>
+            1 teaspoon minced fresh thyme or 1/4 teaspoon dried thyme<br>
+            1/4 teaspoon salt<br>
+            1/8 teaspoon coarsely ground pepper<br>
+            1 beef flat iron steak or top sirloin steak (3/4 pound)<br>
+            1 package (9 ounces) ready-to-serve salad greens<br>
+            8 cherry tomatoes, halved<br>
+            4 radishes, sliced<br>
+            1/2 medium ripe avocado, peeled and thinly sliced<br>
+            1/4 cup dried cranberries<br>
+            Crumbled blue cheese and additional pepper, optional<br>
+        </p>
+
+          <h4>Instructions</h4>
+          <p>
+           For dressing, whisk together first six ingredients. Place steak and 1/4 cup dressing in a resealable plastic bag; seal bag and turn to coat. Refrigerate 8 hours or overnight. Reserve remaining dressing; cover and refrigerate until serving.
+          </p>
+          <p>
+           Drain beef, discarding marinade. Grill steak, covered, over medium heat or broil 4 in. from heat until meat reaches desired doneness (for medium-rare, a thermometer should read 135°; medium, 160°), 6-8 minutes per side. Let stand 5 minutes before slicing.
+          </p>
+          <p>
+           To serve, divide salad greens among four plates. Top with steak, tomatoes, radishes and avocado; sprinkle with cranberries and, if desired, cheese and pepper. Serve with reserved dressing.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body>
+
+</html>

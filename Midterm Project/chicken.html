@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rookie Cookery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/card.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-sm p-3 bg-secondary text-white">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/new.png" alt="logo" height=70 style="width:150px;">
+        </a>
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <!-- Dropdowns -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="recipe.html" id="navbardrop" data-toggle="dropdown">Recipe</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="pork.html">Pork </a>
+                    <a class="dropdown-item" href="chicken.html">Chicken</a>
+                    <a class="dropdown-item" href="seafood.html">Seafood</a>
+                    <a class="dropdown-item" href="pasta.html">Pasta</a>
+                    <a class="dropdown-item" href="beef.html">Beef</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="search.html">Search Recipes</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/pork.jpg" alt="Pork" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Pork</h3>
+                    <p>We have a great recipe for Pork</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/chicken.jpg" alt="roasted chicken" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Roasted Chicken</h3>
+                    <p>Try our some recipe for chicken</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/seafoods.jpg" alt="seafood" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Lagoon Seafoood</h3>
+                    <p>Have a great taste!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/pasta.jpg" alt="pasta" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Pasta</h3>
+                    <p>Have a long live!</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- insert here -->
+
+<div class="container">
+  <h2>Chicken Adobo</h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/chicken/1.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            8 whole chicken legs (about 4 pounds), cut into drumstick and thigh sections<br>
+            1 1/2 cups distilled white vinegar<br>
+            3 garlic cloves, crushed<br>
+            2 bay leaves<br>
+            1/2 tablespoon whole black peppercorns, crushed lightly<br>
+            3/4 cup soy sauce<br>
+            3 tablespoons vegetable oil<br>
+            cooked rice as an accompaniment<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           In a large kettle combine the chicken, the vinegar, the garlic, the bay leaves, the peppercorns, and 1 cup water, bring the mixture to a boil, and simmer it, covered, for 20 minutes. Add the soy sauce and simmer the mixture, covered, for 20 minutes. Transfer the chicken with tongs to a plate and boil the liquid for 10 minutes, or until it is reduced to about 1 cup. Let the sauce cool, remove the bay leaves, and skim the fat from the surface. In a large skillet heat the oil over high heat until it is hot but not smoking and in it sautÃ© the chicken, patted dry, in batches, turning it, for 5 minutes, or until it is browned well. Transfer the chicken to a rimmed platter, pour the sauce, heated, over it, and serve the chicken with the rice.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Chicken Sisig </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/chicken/2.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 tablespoon canola oil<br>
+            1 onion, peeled and chopped<br>
+            3 cloves garlic, peeled and minced<br>
+            4 cups cooked chicken, chopped<br>
+            2 tablespoons soy sauce<br>
+            juice of 1 lime (about 2 tablespoons)<br>
+            salt and pepper to taste<br>
+            1/4 cup mayonnaise<br>
+            2 serrano peppers, chopped<br>
+            1/4 pound chicken livers<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Place sizzling metal plate in a 450 F oven for about 10 minutes to preheat. In a wide pan over medium-high heat, heat 1 tablespoon of oil. Add garlic and cook until softened. Add chopped chicken and spread across the surface of the pan. Cook, as needed, for about 2 to 3 minutes or until lightly brown and begins to crisp. Add soy sauce and continue to cook, stirring as needed, for another 30 to 40 seconds or until sauce is mostly absorbed. Remove chicken from the pan and transfer to a large bowl. Add chicken livers onions, chili peppers, and lime juice. Add mayonnaise and stir until well-combined. Season with salt and pepper to taste. Carefully place the preheated sizzle metal plate on the wood bottom. Add butter and carefully swirl to coat the bottom of the plate. Transfer chicken mixture onto sizzle plate and garnish with additional chopped or sliced chili peppers if desired. Serve immediately.
+          </p>
+          <p>
+            If Adding Chicken Livers<br><br>
+            In a pan over medium heat, heat about 1/2 cup oil until hot. Gently add chicken livers and cook, turning as needed, until crispy and fully cooked. With a slotted spoon, remove from pan and drain on paper towels. Let cool to touch and chop. Add to the bowl with the rest of the ingredients.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Chicken Biryani</h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/chicken/3.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            600 gm boiled basmati rice<br>
+            4 tablespoon minced mint leaves<br>
+            salt as required<br>
+            2 teaspoon coriander powder<br>
+            1 tablespoon garlic paste<br>
+            2 tablespoon tomato puree<br>
+            400 gm thinly sliced white onion<br>
+            8 green cardamom<br>
+            1 tablespoon milk<br>
+            1 kilograms chicken thighs<br>
+            1 teaspoon garam masala powder<br>
+            2 pinches saffron<br>
+            1 tablespoon ginger paste<br>
+            4 sliced & slit green chilli<br>
+            320 gm chopped tomato<br>
+            2 teaspoon cumin seeds<br>
+            6 tablespoon refined oil<br>
+            1/2 teaspoon chilli powder<br>
+            6 tablespoon plain greek yogurt<br>
+            1 teaspoon powdered turmeric<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           First, in order to marinate the chicken, take a large bowl, put Greek yogurt, turmeric, chili powder along with salt as per your taste in a small bowl. Mix it well using a spoon and then, add the chicken thighs in the mixture and rub with this mixture. Keep aside for about 20-30 minutes, so that the yogurt mixture is properly absorbed by the chicken. Also, soak saffron in the milk to make saffron milk and keep aside.
+          </p>
+          <p>
+           In the meanwhile, pour refined oil in a deep-bottomed pan, keeping it on medium flame. Add cumin seeds and green cardamom in it and saute for about 2 minutes. Once done, immediately add the sliced onion and fry for 2-3 minutes straight. Make sure you don't burn it, so when the onion starts to get brown in color, add tomatoes and tomato puree and fry for another 5 minutes.
+          </p>
+          <p>
+           Next, add the slit green chilies to the mixture along with ginger-garlic paste, frying the mixture yet again for a minute. Then, add coriander powder and turn the flame to medium-low while stirring and cooking the masala. Quickly, add the marinated chicken and mix for a while so that the ingredients absorb the juices properly.
+          </p>
+          <p>
+           Turn the flame to medium again and heat-through for about 5-6 minutes only to turn it over to low heat. Cover with a lid and let simmer for 5 minutes. Make sure to keep stirring during the entire process, else the chicken might stick to the bottom, eventually ending up burnt. You can add little water, if you find the consistency too thick.
+          </p>
+          <p>
+           Once done, turn off the flame and add half of the boiled rice in the pan and keep the rest aside until required. Sprinkle milk soaked saffron along with garam masala and coriander leaves. Put the remaining rice over this layer and garnish with the same mentioned four ingredients.
+          </p>
+          <p>
+           Lastly, cover the lid, turn the flame to low medium and let the rice cook for about 5 minutes. Once done, put it off and let the biryani stay covered for about another 10 minutes. Serve hot, along with raita or any chutney of your choice.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Chicken Curry</h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/chicken/4.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1-1/4 pounds boneless, skinless chicken breasts, cut into 1/4-inch strips<br>
+            Salt and freshly ground black pepper<br>
+            2-1/2 teaspoons curry powder, divided<br>
+            3 tablespoons vegetable oil, divided<br>
+            1 medium yellow onion, finely chopped<br>
+            4 garlic cloves, minced<br>
+            1 tablespoon grated fresh ginger<br>
+            2 cups low sodium chicken broth, best quality such as Swanson<br>
+            1 tablespoon cornstarch<br>
+            2 teaspoons sugar<br>
+            1 cup frozen peas (no need to thaw)<br>
+            1/4 cup plain low fat (2%) or whole Greek yogurt (do not use nonfat)<br>
+            1/4 cup chopped fresh cilantro<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Sprinkle the chicken evenly with 3/4 teaspoon salt, 1/4 teaspoon pepper and 1 teaspoon curry powder.
+          </p>
+          <p>
+            Heat 1-1/2 tablespoons of oil in a 12-inch skillet over high heat until just smoking. Add the chicken in a single layer and cook, stirring occasionally, until lightly browned but still pink in spots, about 3 minutes. Transfer the partially cooked chicken to a clean bowl and set aside.
+          </p>
+          <p>
+            Add the remaining 1-1/2 tablespoons oil to the skillet and set heat to medium. Add the onions and cook, stirring occasionally, until softened, about 5 minutes. Stir in the garlic, ginger and remaining 1-1/2 teaspoons curry powder and cook until fragrant, about a minute more.
+          </p>
+          <p>
+            Whisk the chicken broth and cornstarch together to dissolve the cornstarch, then add to the skillet along with the sugar and 1/8 teaspoon salt. Bring to a boil, then reduce the heat to medium and cook until the sauce is nicely thickened, about 5 minutes.
+          </p>
+          <p>
+            Add the peas and partially cooked chicken to the skillet, turn the heat down to low and simmer until the chicken is cooked through, a few minutes. Off the heat, stir in the yogurt and cilantro; then season with salt and pepper, to taste. Serve with basmati rice.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Chicken Sandwich</h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/chicken/5.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1/4 cup reduced-fat mayonnaise<br>
+            1 tablespoon Dijon mustard<br>
+            1 tablespoon honey<br>
+            4 boneless skinless chicken breast halves (4 ounces each)<br>
+            1/2 teaspoon Montreal steak seasoning<br>
+            4 slices Swiss cheese<br>
+            4 whole wheat hamburger buns, split<br>
+            2 bacon strips, cooked and crumbled<br>
+            Lettuce leaves and tomato slices, optional<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           In a small bowl, mix mayonnaise, mustard and honey. Pound chicken with a meat mallet to 1/2-in. thickness. Sprinkle chicken with steak seasoning. Grill chicken, covered, over medium heat or broil 4 in. from heat until a thermometer reads 165°, 4-6 minutes on each side Top with cheese during the last 1 minute of cooking.
+          </p>
+          <p>
+              Grill buns over medium heat, cut side down, until toasted, 30-60 seconds. Serve chicken on buns with bacon, mayonnaise mixture and, if desired, lettuce and tomato.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Chicken Inasal</h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/chicken/6.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            2 lbs chicken cut into serving pieces<br>
+            2 tablespoons ginger minced<br>
+            2 tablespoons garlic minced<br>
+            3/4 cup lemongrass chopped<br>
+            1 cup coconut vinegar<br>
+            1/2 cup lemon or calamansi juice<br>
+            1 tablespoon salt<br>
+            1/4 cup brown sugar<br>
+            1 cup lemon soda softdrink<br>
+            1/2 tablespoon ground black pepper<br>
+            Basting Sauce:<br>
+            3 tablespoons annatto oil atsuete oil<br>
+            1/2 cup margarine softened<br>
+            1/4 teaspoon salt<br>
+            1 teaspoon lemon or calamansi juice<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           In a freezer bag or large bowl, combine chicken, lemongrass, salt, ground black pepper, ginger, garlic, brown sugar, vinegar, lemon-lime soda, and lemon juice.
+          </p>
+          <p>
+           Stir or shake the mixture until every ingredient is well incorporated. Marinade for 1 to 3 hours.
+          </p>
+          <p>
+           In a bowl, combine margarine, annatto oil, salt, and lemon juice then stir. Set aside.
+          </p>
+          <p>
+           Grill the chicken while basting generous amount of the margarine mixture.
+          </p>
+          <p>
+           Transfer the grilled chicken to a serving plate.
+          </p>
+          <p>
+           Serve with sinamak.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Chicken Nuggets </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/chicken/7.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            3 skinless, boneless chicken breasts<br>
+            1 cup Italian seasoned bread crumbs<br>
+            1/2 cup grated Parmesan cheese<br>
+            1 teaspoon salt<br>
+            1 teaspoon dried thyme<br>
+            1 tablespoon dried basil<br>
+            1/2 cup butter, melted<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Preheat oven to 400 degrees F (200 degrees C).
+          </p>
+          <p>
+           Cut chicken breasts into 1 1/2-inch sized pieces. In a medium bowl, mix together the bread crumbs, cheese, salt, thyme and basil. Mix well. Put melted butter in a bowl or dish for dipping
+          </p>
+          <p>
+           Dip chicken pieces into the melted butter first, then coat with the breadcrumb mixture. Place the well-coated chicken pieces on a lightly greased cookie sheet in a single layer, and bake in the preheated oven for 20 minutes.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Tinolang Manok </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/chicken/8.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 tablespoon oil<br>
+            1 small onion, peeled and sliced thinly<br>
+            2 to 3 cloves garlic, peeled and minced<br>
+            2 thumb-sized fresh ginger, peeled and julienned<br>
+            1 (3 to 4 pounds) whole chicken, cut into serving pieces<br>
+            2 tablespoons fish sauce<br>
+            5 cups water<br>
+            1 small green papaya, pared, seeded and cut into 2-inch wedges<br>
+            1 bunch fresh spinach leaves, stems trimmed<br>
+            salt and pepper to taste<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           In a pot over medium heat, heat oil. Add onions, ginger and garlic and cook until limp and aromatic.
+          </p>
+          <p>
+           Add chicken and cook, stirring occasionally, for about 5 to 7 minutes or until chicken starts to change color and juices run clear. Add fish sauce and cook, stirring occasionally, for about 1 to 2 minutes.
+          </p>
+          <p>
+           Add water and bring to a boil, skimming scum that float on top. Lower heat, cover and simmer for about 30 to 35 minutes or until chicken is cooked through.
+          </p>
+          <p>
+           Add papaya and cook for about 3 to 5 minutes or until tender yet crisp. Season with salt and pepper to taste. Add spinach and cook until just wilted. Serve hot.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Chicken Pochero </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/chicken/9.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            2 lbs. Chicken<br>
+
+            1 piece Knorr Chicken Cube<br>
+
+            2 pieces potato cubed<br>
+
+            2 bunches baby bok choy<br>
+
+            ½ head cabbage<br>
+
+            8 ounces tomato sauce<br>
+
+            18 pieces long green beans<br>
+
+            2 pieces Chorizo de Bilbao<br>
+
+            8 ounces chick pea<br>
+
+            3 pieces Saba banana<br>
+
+            2 pieces tomato<br>
+
+            1 piece onion<br>
+
+            4 cloves garlic<br>
+
+            2 cups water<br>
+
+            3 tbsps. cooking oil<br>
+
+            Fish sauce and crushed peppercorn to taste<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Heat oil in a cooking pot. Pan-fry the chicken for 2 minutes per side. Set aside.
+          </p>
+          <p>
+           Using the remaining oil, saute onion and garlic.
+          </p>
+          <p>
+           Add chorizo. Saute for 1 minute.
+          </p>
+          <p>
+           Add tomato. Continue to saute until onion and tomato softens.
+          </p>
+          <p>
+           Put the pan-fried chicken back into the pot. Stir
+          </p>
+          <p>
+            Pour tomato sauce and water.Let boil.
+          </p>
+          <p>
+           Add Knorr Chicken Cube. Stir and cover the pot. Cook in medium heat for 15 minutes.
+          </p>
+          <p>
+           Put potato, saba banana, and chick pea into the pot. Cover and cook for 12 minutes.
+          </p>
+          <p>
+           Add long green beans and cabbage. Cover and cook for 3 minutes.
+          </p>
+          <p>
+           Add bok choy. Cook for 2 minutes. Season with crushed peppercorn and fish sauce. Stir.
+          </p>
+          <p>
+           Transfer to a bowl and serve.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Chicken Sopas </h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/chicken/10.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            12 oz. chicken breasts boneless<br>
+
+            ½ piece cabbage sliced<br>
+
+            3 stalks celery chopped<br>
+
+            1 piece onion diced<br>
+
+            3 pieces hotdog sliced<br>
+
+            ¾ cups carrots diced<br>
+
+            12 oz. evaporated milk<br>
+
+            1 ½ cups elbow macaroni<br>
+
+            2 teaspoons minced garlic<br>
+
+            1 piece Knorr Chicken Cube<br>
+
+            6 to 8 cups water<br>
+
+            3 tablespoons cooking oil<br>
+
+            Salt and ground black pepper to taste<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Boil 3 cups water in a medium pot. Add the chicken breasts.
+          </p>
+          <p>
+           Cover and cook in medium heat for 15 to 18 minutes. You may add more water if needed.
+          </p>
+          <p>
+            Separate the chicken from the water. Let the chicken cool down and then shred. Set both shredded chicken and water aside.
+          </p>
+          <p>
+           Heat oil in a large soup pot. Sauté the garlic until it turns medium brown. Add onion, celery, and carrot. Continue to sauté for 2 to 3 minutes.
+          </p>
+          <p>
+           Add the shredded chicken. Stir and cook for 1 minute.
+          </p>
+          <p>
+           Add the hot dog. Quickly stir and then pour the water used to boil the chicken. Also pour the remaining water. Let boil.
+          </p>
+          <p>
+           Add the Knorr Chicken Cube. Stir. Cover and cook for 3 to 5 minutes
+          </p>
+          <p>
+           Put the elbow macaroni in the pot. Cook for 10 minutes.
+          </p>
+          <p>
+           Add the cabbage. Stir and cook for 3 to 5 minutes. Note: you can add more water if needed.
+          </p>
+          <p>
+           Pour the evaporated milk. Stir, let boil, cover and cook for another 3 minutes.
+          </p>
+          <p>
+           Add salt and ground black pepper to taste.
+          </p>
+          <p>
+           Transfer to a bowl and serve
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

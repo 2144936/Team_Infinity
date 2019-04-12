@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rookie Cookery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/card.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-sm p-3 bg-secondary text-white">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/new.png" alt="logo" height=70 style="width:150px;">
+        </a>
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <!-- Dropdowns -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="recipe.html" id="navbardrop" data-toggle="dropdown">Recipe</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="pork.html">Pork </a>
+                    <a class="dropdown-item" href="chicken.html">Chicken</a>
+                    <a class="dropdown-item" href="seafood.html">Seafood</a>
+                    <a class="dropdown-item" href="pasta.html">Pasta</a>
+                    <a class="dropdown-item" href="beef.html">Beef</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="search.html">Search Recipes</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/pork.jpg" alt="Pork" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Pork</h3>
+                    <p>We have a great recipe for Pork</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/chicken.jpg" alt="roasted chicken" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Roasted Chicken</h3>
+                    <p>Try our some recipe for chicken</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/seafoods.jpg" alt="seafood" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Lagoon Seafoood</h3>
+                    <p>Have a great taste!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/pasta.jpg" alt="pasta" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Pasta</h3>
+                    <p>Have a long live!</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- insert here -->
+    <div class="container">
+  <h2>A summer Seafood Platter</h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/seafood/1.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            2 cooked lobsters, cleaned<br>
+            Abundant crushed ice<br>
+            16 to 24 raw oysters, shucked
+            Several fresh, cooked crabs (use king crab legs, dressed crab, whole cleaned <br>Dungeness, or whatever crab is readily available in your region)<br>
+            1 pound best-quality cooked, shell-on or tail-only shrimp<br>
+            Other cooked and chilled shellfish as available, such as stone crab claws, clams, mussels, winkles (serve with toothpicks), or crayfish<br>
+            Fresh seaweed or curly kale, for garnishing the platter<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Remove the tail meat of the lobsters in one piece. Halve each tail lengthwise and slice crosswise about 3/8-inch thick. Pierce each piece with toothpicks.
+          </p>
+          <p>
+            Crack the lobster claws (save the heads and tentacles for decoration).
+          </p>
+          <p>
+            Mound the platter(s) with crushed ice.
+          </p>
+          <p>
+            Begin adding and arranging the shellfish artistically, using the lobster heads as centerpieces (some people will pull off and nibble on the legs, so leave them attached). Group each type of shellfish together, rather than mixing them up. Fill in the gaps with bits of seaweed or kale, making it look like the bottom of the ocean.  Serve.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Baked Stuffed Lobster</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/seafood/2.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1/4 pound (1 stick) unsalted butter<br>
+            3 tablespoons finely chopped shallots<br>
+            2 cloves garlic, minced<br>
+            1/4 cup medium-dry sherry<br>
+            1 pound fresh crab meat, picked over to remove any shell or cartilage<br>
+            1 cup crushed ritz crackers<br>
+            2 tablespoons chopped parsley<br>
+            Salt and freshly ground black pepper<br>
+            4 live 1½ pound lobsters<br>
+            3 tablespoons butter, melted<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           In a large sauté pan, melt the butter.
+            Add the shallots and cook over medium heat, stirring, until beginning to soften.
+            Add the garlic and cook for 1 minute. Add the sherry and cook for 1 minute.
+            Remove from the heat and add the crabmeat, cracker crumbs, and parsley.
+            Season to taste with salt and pepper.
+            (You may not need salt because the cracker crumbs can be salty.) Cool the stuffing completely.
+          </p>
+          <p>
+           Preheat the oven to 425°F.
+          </p>
+          <p>
+          Place the lobsters on a cutting board and use a large knife to split them in half.
+        Remove the sand sac from the head and the black intestinal vein.
+        Take off the claw bands and, if the lobsters are hard-shells, crack the claws in a couple of places with a hammer so the heat will penetrate.<br>
+        Place the lobsters, cut sides up, on two rimmed baking sheets and sprinkle the stuffing mixture over the tail and bodies of the lobsters.
+        Drizzle with melted butter.
+          </p>
+          <p>
+            Bake until the lobster meat is opaque and the crumbs are crisp and golden brown, 15 to 22 minutes.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2> Ca Cang Kho</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/seafood/3.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            15 gms dice onion<br>
+            5 gms minced garlic<br>
+            30 gms fresh coriander<br>
+            15 gms spring onion<br>
+            200 gms sole fish slice<br>
+            5 gms dark soya sauce<br>
+            5 gms black pepper (crushed), roasted<br>
+            3 gms oyster sauce<br>
+            15 ml oil<br>
+            20 gms tempura flour<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Dust the sole fillet with tempura flour.
+          </p>
+          <p>
+            Pour oil for frying the fish fillet.
+          </p>
+          <p>
+            Put the fish into the oil and fry till golden, keep it aside.
+          </p>
+          <p>
+            ake another wok and keep it on high flame.
+          </p>
+          <p>
+            Add garlic, saute till brown.
+          </p>
+          <p>
+           Add diced onion, oyster sauce, crushed black pepper, fried fish, then dark soya sauce. Then sauté for a while, adding sliced
+          spring onion and fresh green coriander and sauté again. Adjust the seasoning, serve hot.
+          Chepala Iguru (Fish Curry):
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Calamari Fritti</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/seafood/4.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 pound cleaned squid<br>
+            5 tablespoons all-purpose flour<br>
+            5 tablespoons semolina flour or stone-ground yellow cornmeal<br>
+            2 teaspoons salt, preferably kosher<br>
+            ½ teaspoon freshly ground black pepper<br>
+            3 to 4 cups peanut oil<br>
+            Lemon wedges or 1 cup Marinara Sauce, for serving<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Cut the squid horizontally into ½-inch-thick rings.
+            Cut the tentacles in half lengthwise.
+            Pat the squid dry with paper towels.
+          </p>
+          <p>
+            In a shallow bowl or a plastic bag, mix the flour, semolina, salt, and pepper.
+            Add the squid pieces, and stir or shake to cover with the flour mixture.
+            Remove the squid, shaking the excess flour off the pieces, and place them on a wire rack.
+            Let them sit for 10 minutes (this allows the coating to adhere well).
+          </p>
+          <p>
+            Pour the oil into a large saucepan (it should be 2 inches deep) and heat until it registers 375°F on a deep-frying thermometer.
+            Carefully add one-quarter to one’ third of the squid pieces to the oil, without crowding them, and fry for 1½ minutes.
+            Remove immediately with a slotted spoon and drain on paper towels.
+            Let the oil temperature rise back up to 375°F, and repeat with the rest of the squid.
+          </p>
+          <p>
+            Serve immediately, with lemon wedges or a side dish of Marinara Sauce.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Chepala Iguru (Fish Curry)</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/seafood/5.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            500 Gram Fish (cut into small pieces)<br>
+            400 Gram Onions, finely chopped<br>
+            4 Green chillies, sliced<br>
+            2 tsp Red chilli powder<br>
+            1 tsp Cumin powder<br>
+            1 tsp Coriander powder<br>
+            1 tsp Turmeric powder<br>
+            1 Tomato<br>
+            1 Tbsp Ginger-garlic paste<br>
+            2 Tbsp Coriander leaves<br>
+            3/4 Cup Oil<br>
+            Salt<br>
+          </p>
+          <h4>For Marinade:</h4>
+          <p>
+            1/2 tsp Red chilli powder
+            1/2 tsp Turmeric powder
+            salt
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Marinate the fish with chilli powder, turmeric and salt, keep for 1/2 an hour.<br>
+
+            Fry fish pieces in oil till they turn golden brown.<br>
+
+            Now add onions and green chillies and fry till golden brown.<br>
+
+            Add dry powders, ginger, garlic paste, salt and tomato, fry till the oil separates.<br>
+
+            Add water and bring to a boil.<br>
+
+            Add fried fish and boil for about 7 minutes.<br>
+<br>
+            Garnish with coriander leaves and serve hot.<br>
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Clams with Bacon</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/seafood/6.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            4½ pounds littleneck clams<br>
+            2 tablespoons olive oil<br>
+            8 ounces slab bacon, cut into thick 1½-inch chunks<br>
+            Few sprigs of fresh thyme<br>
+            Splash of dry white wine<br>
+            Squeeze of lemon juice (optional)<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Wash the clams and discard any that do not shut tightly when gently tapped.
+          </p>
+          <p>
+            Place a large, heavy-based pan (with lid) over medium heat.
+            Add the oil, bacon, and thyme and fry until the bacon is golden brown around the edges, 4-5 minutes.
+            Pour off excess fat, if you like. Increase the heat, pour in a splash of white wine, and immediately tip in the clams.
+            Give the pan a shake, then cover. Let the clams steam until they have opened, 3-4 minutes.
+            (Discard any clams that remain closed.)
+          </p>
+          <p>
+            Grind some black pepper over the clams and add a squeeze of lemon juice, if you like.
+            You probably won't need to add salt, because the clams and bacon are already salty.
+            Divide the clams, bacon, and pan juices among warm bowls and serve at once.
+          </p>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Cold Tuna Salad</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/seafood/7.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            3 Cups pasta, boiled<br>
+            2 tbsp celery, chopped<br>
+            1 cup tuna<br>
+            1/2 tsp pepper<br>
+            1 tsp lemon juice<br>
+            3 hard boiled eggs cut into small pieces<br>
+            2 tsp olive oil<br>
+            salt
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            In a large bowl, take the pasta; add tuna, celery, olive oil and lemon juice. Sprinkle salt and pepper and mix well.<br>
+
+            Garnish with eggs. Cover and refrigerate for a least one hour or overnight. Serve.
+          </p>
+ 
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Crab and Salmon Cakes:</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/seafood/8.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            8 ounces cooked salmon<br>
+            8 ounces canned lump crabmeat, picked clean<br>
+            3 scallions, minced (include some of the green)<br>
+            ¼ cup cracker meal<br>
+            ¼ cup mayonnaise, homemade or high-quality store-bought<br>
+            1 egg, beaten<br>
+            1 tablespoon finely chopped fresh parsley<br>
+            1 teaspoon Dijon mustard<br>
+            1/8 teaspoon grated nutmeg<br>
+            ¼ teaspoon Old Bay Seasoning or 1/8 teaspoon cayenne pepper<br>
+            1 egg, beaten with 1 tablespoon water<br>
+            1 cup fine bread crumbs, for dredging<br>
+            ½ cup mayonnaise, homemade or high-quality store-bought<br>
+            ½ cup plain yogurt<br>
+            1 tablespoon Dijon mustard<br>
+            1 tablespoon catsup<br>
+            1 tablespoon capers, drained, dried, and chopped<br>
+            1 tablespoon finely chopped sour pickles<br>
+            1 tablespoon chopped fresh parsley<br>
+            1 tablespoon chopped fresh parsley<br>
+            1 hard boiled egg, chopped (optional)<br>
+            ¼ cup vegetable oil, for frying)<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Prepare the cakes: Remove any bones or skin from the salmon.
+            In a medium bowl, flake the salmon with a fork.
+            Add the crabmeat, scallions, cracker meal, mayonnaise, beaten egg, parsley, mustard, nutmeg, and Old Bay Seasoning.
+            Mix well, cover, and refrigerate for 1 hour.
+          </p>
+          <p>
+            Shape the cold mixture into 8 small round cakes. 
+            Dip the cakes in the beaten-egg mixture and coat evenly with the breadcrumbs. Place the cakes on a large plate.
+            Cover and refrigerate for 1 hour or more.
+          </p>
+          <p>
+            Prepare the sauce: In a small bowl, whisk the mayonnaise, yogurt, and mustard until smooth.
+            Add the remaining ingredients, cover, and chill.
+          </p>
+          <p>
+            In a large skillet, heat the oil over medium heat until hot, but not smoking. 
+            Add the cakes and fry until golden on both sides, about 5 minutes. 
+            Drain on paper toweling. Serve over tossed salad and accompany with the sauce
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Goan Prawn Curry with Raw Mango:</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/seafood/9.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            15-20 prawns or shrimps
+          </p>
+
+          <h4>For Gravy:</h4>
+          <p>
+            1/2 cup grated coconut<br>
+            1 marble sized ball of tamarind<br>
+            1 tsp turmeric powder<br>
+            2-3 dry red chillies or Kashmiri red chillies<br>
+            Pepper to taste<br>
+            1/2 tsp coriander seeds<br>
+            1/2 chopped onion<br>
+            1 raw mango<br>
+            1 tsp oil<br>
+          </p>
+
+          <h4>For Marination: </h4>
+          <p>
+            1 Tbsp turmeric powder<br>
+            1/2 Tbsp chilli powder<br>
+            1 tsp salt<br>
+          </p>
+          <h4>Instructions</h4>
+
+          <h4>For marination: </h4>
+          <p>
+            De-shell the prawns.<br>
+            Remove the thick black thread present in the middle of the prawn's back.<br>
+            Apply turmeric powder, chilly powder and salt.<br>
+            Leave it for about 30 minutes.<br>
+            Peel raw mango and chop it into pieces.<br>
+          </p>
+
+          <h4>For Gravy:</h4>
+          <p>
+            Grind grated coconut, turmeric powder, tamarind, peppercorns, coriander and red chillies.<br>
+            Add 1/4 cup water, prawns and raw mango pieces in an aluminum bowl.<br>
+            Add 2 Tbsp of gravy.<br>
+            Let it cook for 10 minutes.<br>
+            Pour in the gravy and stir.<br>
+            Add water and cook on a medium flame for about 10 minutes.<br>
+            Add oil in a pan with chopped onions and fry until burnt.<br>
+            Pour it into the gravy and close the lid.<br>
+            Add salt to taste.<br>
+          </p>      
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Kane Rava Fry</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/seafood/10.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            2 lady fish<br>
+            Red chilli paste<br>
+            A plate of semolina<br>
+            Refined oil<br>
+          </p>
+
+          <h4>For Gravy:</h4>
+          <p>
+            100 gm red chilli<br>
+            2 tsp ginger garlic paste<br>
+            1 tsp salt<br>
+            2 Tbsp lime juice<br>
+            1 egg<br>
+            1 Tbsp cornflour<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Clean the fish.
+          </p>
+          <p>
+            Apply red chilli paste on the inside and the outside of the fish.
+          </p>
+          <p>
+            Keep the fish aside for marination for about half an hour.
+          </p>
+          <p>
+            Then coat the marinated fish with semolina and deep fry till done and serve.
+          </p>
+          <h4>For Gravy:</h4>
+          <p>
+            Boil red chillies in water. 
+          </p>
+          <p>
+            Strain the chillies and grind them to a thick paste.
+          </p>
+          <p>
+            Now add gingers, garlic paste, salt, lime juice, egg, and corn flour.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

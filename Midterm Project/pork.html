@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rookie Cookery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/card.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-sm p-3 bg-secondary text-white">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/new.png" alt="logo" height=70 style="width:150px;">
+        </a>
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <!-- Dropdowns -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="recipe.html" id="navbardrop" data-toggle="dropdown">Recipe</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="pork.html">Pork </a>
+                    <a class="dropdown-item" href="chicken.html">Chicken</a>
+                    <a class="dropdown-item" href="seafood.html">Seafood</a>
+                    <a class="dropdown-item" href="pasta.html">Pasta</a>
+                    <a class="dropdown-item" href="beef.html">Beef</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="search.html">Search Recipes</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/pork.jpg" alt="Pork" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Pork</h3>
+                    <p>We have a great recipe for Pork</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/chicken.jpg" alt="roasted chicken" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Roasted Chicken</h3>
+                    <p>Try our some recipe for chicken</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/seafoods.jpg" alt="seafood" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Lagoon Seafoood</h3>
+                    <p>Have a great taste!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/pasta.jpg" alt="pasta" width="100" height="90">
+                <div class="carousel-caption">
+                    <h3>Pasta</h3>
+                    <p>Have a long live!</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- insert here -->
+    <div class="container">
+  <h2>Pork Adobo</h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pork/adobo.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            2 lbs. pork cut into bite-size pieces<br>
+
+            2 tbsp vegetable oil<br>
+
+            3 cloves garlic, minced<br>
+
+            1/3 cup soy sauce<br>
+
+            1/3 cup vinegar<br>
+
+            1 bay leaf<br>
+
+            1/2 tsp ground pepper<br>
+
+            water<br>
+
+            1 tbsp sugar or honey<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Heat oil in a large pot, rotate to coat sides of the pot, Add pork and cook until the meat is brown
+          </p>
+          <p>
+              Add garlic and saute for a minute. Add soy sauce, vinegar, bay leaf, pepper and water
+          </p>
+          <p>
+              Bring to a boil, reduce heat and simmer for 45 minutes or until pork are tender(dont let it dry out) add water 1/2 cup at a time several times until pork meat is tender. Stir in honey or sugar.
+          </p>
+          <p>
+              Serve with steamed rice
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Binagoongan</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pork/binagoongan.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 1/2 pork belly cut into cubes<br>
+
+            2 pcs. tomato cubed<br>
+
+            1 pc. Chinese Eggplant<br>
+
+            3 1/2 cups pork stock<br>
+
+            3 tbsps. white vinegar<br>
+
+            4 tbs bagoong alamang<br>
+
+            1 pc onion chopped<br>
+
+            3 cloves garlic minced<br>
+
+            2 tsps. white sugar<br>
+
+            1/8 tsp. groung black pepper<br>
+
+            5 tbsps. cooking oil<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Heat oil in cooking pan
+          </p>
+          <p>
+              Saute onion, garlic, and tomato. Once the onion becomes soft, add the pork belly. Cook until the belly turns light brown
+          </p>
+          <p>
+              Add shrimp paste(bagoong alamang). Stir. Cook for 5 mins.
+          </p>
+          <p>
+              Pour vinegar.Let the mixture boil. stir and cook for 2 mins.
+          </p>
+          <p>
+              Pour the pork stock into the pot. Cover and let boil. Adjust the heat to medium and continue to cook for 40 mins. until the pork gets tenders. Note: add water or pork stock as needed.
+          </p>
+          <p>
+              Add eggplant. Stir.Cover the pot and cook for 3 mins.
+          </p>
+          <p>
+              Season with sugar and ground black pepper.
+          </p>
+          <p>
+              transfer to a plate and serve.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Dinuguan</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pork/dinuguan.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 lb portrait<br>
+
+            1 cup vinegar<br>
+
+            2 pcs long green pepper<br>
+
+            1 1/2 tbsp brown sugar<br>
+
+            1 piece onion<br>
+
+            1 tbsp. garlic<br>
+
+            3 tbsps. cooking oil<br>
+
+            1 cup water<br>
+
+            10 oz pork blood<br>
+
+            1 pc. pork cube<br>
+
+            salt and pepper to taste<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Heat oil in a pan. Sauté garlic and onion
+          </p>
+          <p>
+            Once the onion softens, add pork. Continue to sauté for 5 minutes or until light brown.
+          </p>
+          <p>
+            Pour water. Let boil.
+          </p>
+          <p>
+            Add pork cube. Cook in low heat until the meat tenderizes
+          </p>
+          <p>
+             Add pork blood. Stir. Cook for 8 to 10 minutes while stirring.
+          </p>
+          <p>
+            Pour vinegar and add sugar and long green pepper. Cook for 12 to 15 minutes.
+          </p>
+          <p>
+            Season with salt and pepper as needed. Serve hot with puto.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Pork Dumpling</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pork/dumpling.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 lb. ground pork<br>
+
+            1 1/2 tbsps. knorr liquid seasoning<br>
+
+            30 pcs Gyoza rapper<br>
+
+            1 cup cabbage chopped<br>
+
+            1/2 cup shrimp chopped<br>
+
+            1/2 cup Chinese chives chopped<br>
+
+            2 tbsps. cooking wine<br>
+
+            1 tbsp. ginger grated<br>
+
+            1 tsp. sesame oil<br>
+
+            1/2 tsp. salt<br>
+
+            1/4 tsp. groung white peppers<br>
+
+            6 cups of water<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Mash the cabbage. Add salt. Continue to mash until salt is well distributed. Let it stay for 10 minutes.
+          </p>
+          <p>
+              Combine ground pork, shrimp, ginger, and chives in bowl. Mix well.
+          </p>
+          <p>
+              Add cabbage, ground white pepper, cooking wine, Sesame oil, and Knorr liquid seasoning. Continue to mix until all ingredients are well blended.
+          </p>
+          <p>
+              Scoop 1 ½ teaspoon of pork mixture and place it in the middle of the Gyoza wrapper. Secure the filling by symmetrically folding the wrapper and pressing the edges. You may also press using the tip of a fork.
+          </p>
+          <p>
+              Arrange the pork dumplings on a steamer lined with cabbage leaves. Cover and steam for 10 minutes
+          </p>
+          <p>
+              Serve with dipping sauce
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Pata Hamonado</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pork/hamonado.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            3 1/2 ls pork hock pata, sliced<br>
+
+            1 piece Knorr Pork Cube<br>
+
+            20 ounces pineapple chunks<br>
+
+            1 piece onion<br>
+
+            4 cloves garlic<br>
+
+            1/4 cup soy sauce<br>
+
+            1/4 cup brown sugar<br>
+
+            5 pieces bay leaves<br>
+
+            1 1/2 cups water<br>
+
+            1 tsp. whole peppercorn<br>
+
+            3 tbsps. cooking oil<br>
+
+            salt to taste<br>
+          </p>
+        
+          <h4>Instructions</h4>
+          <p>
+           Boil 4 cups of water in a cooking pot. Add pork hock. Let boil for 15 minutes. Discard water. Set the pork aside
+          </p>
+          <p>
+            Heat cooking oil in a cooking pot. Saute garlic and onion.
+          </p>
+          <p>
+            Add the boiled pork hock once the onion softens.
+          </p>
+          <p>
+             Pour soy sauce, pineapple juice, and water. Let boil. Add whole peppercorn and dried bay leaves Pressure cook for 18 minutes. Note: if not using a pressure cooker, boil pork for 90 minutes on a regular cooking pot. Make sure to add water if the liquid is about to dry-up.
+          </p>
+          <p>
+            Add Knorr Pork Cube, brown sugar, and pineapple chunks. Stir. Let it simmer until the sauce reduces to half.
+          </p>
+          <p>
+            Season with salt. Transfer to a serving plate. Serve with rice.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Pork Kaldereta sa Gata</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pork/kaldereta.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            2 lbs Pork Belly sliced into cubes<br>
+
+            4 tbsps.liver spread<br>
+
+            6 pcs. tomato chopped<br>
+
+            1 onion chopped<br>
+
+            5 cloves of garlic minced<br>
+
+            2 cups pork broth<br>
+
+            2 cup coconut milk<br>
+
+            2 pcs. potato cubed<br>
+
+            2 pcs. carrot cubed<br>
+
+            1 green bell pepper chopped<br>
+
+            1 red bell pepper chopped<br>
+
+            3 pcs. thai chili pepper<br>
+
+            3 pcs. bay leaves<br>
+
+            2 1/2 tbsps. fish sauce<br>
+
+            1/4 tsps. crushed black pepper<br>
+
+            3 tbsps. cooking oil<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Heat oil in a pan.
+          </p>
+          <p>
+            Sauté garlic until color turns light brown.
+          </p>
+          <p>
+            Add chopped onion. cook until soft.
+          </p>
+          <p>
+            Add pork belly slices. Sauté until outer part turns light brown.
+          </p>
+          <p>
+            Put the chopped ripe tomatoes into the pan. Cook until soft.
+          </p>
+          <p>
+            Pour pork broth into the pan. Let boil.
+          </p>
+          <p>
+             Add chopped Thai chili, liver spread, and dried bay leaves.
+          </p>
+          <p>
+            Pour coconut milk. Stir and cover andAdd bell peppers. Cook for 7 to 8 minutescook between low to medium heat for 45 to 60 minutes or until tender. Note: add more broth or water if needed.
+          </p>
+          <p>
+            Put-in carrots and potato and cook for 7 minutes.
+          </p>
+          <p>
+            Add bell peppers. Cook for 7 to 8 minutes
+          </p>
+          <p>
+            Season with fish sauce and crushed whole peppercorn. Continue to cook until sauce thickens.
+          </p>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Lechon Kawali</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pork/lechon.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            4 lbs. pork belly<br>
+
+            2 tablespoon salt<br>
+
+            1 head garlic, pounded<br>
+
+            2 tablespoon peppercorn<br>
+
+            2 bay leaves<br>
+
+            cooking oil<br>
+            
+            water<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+             In a pot over medium heat, combine pork belly, garlic, salt, peppercorns, bay leaves, and enough water to cover. Bring to a boil, skimming scum that floats on top. Lower heat, cover and continue to cook for about 1 to 1-1/2 hours or until meat is tender but not falling apart.
+          </p>
+          <p>
+             Drain pork from liquid, discarding liquid. Wipe the pork dry, removing any stray aromatics. Place on a rack and refrigerate overnight to completely cool and dry.
+          </p>
+          <p>
+            In a deep, heavy-bottomed pot, heat enough oil to completely cover meat to about 350 F to 375 F. Carefully place meat into oil and fry until meat is golden and skin is crisp and puffed. While the meat is frying, regularly sprinkle about 1 tablespoon cold water onto the meat and hot oil every 5 minutes or so.
+          </p>
+          <p>
+            Remove meat from pot and drain on a wire rack setover a baking sheet. let it rest and cut into serving pieces.
+          </p>
+ 
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Crispy Pata</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pork/Pata.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 piece whole pig leg<br>
+
+            6 pieces bay leaves<br>
+
+            2 tbsp. peppercorn<br>
+
+            6 tsps. salt<br>
+
+            2 tsps. ground pepper<br>
+
+            2 tsps. garlic powder<br>
+
+            12 cups of water<br>
+
+            6 cups of cooking oil<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Pour water in a cooking pot then let it boil.
+          </p>
+           <p>
+           Put-in dried bay leaves, whole peppercorn, and 4 teaspoons of salt.
+          </p>
+           <p>
+           Add the whole pig’s legs in the cooking pot then simmer until the leg becomes tender (about 45 to 60 minutes)
+          </p>
+           <p>
+           Remove the tender leg from the cooking pot and set aside until the temperature goes down.
+          </p>
+           <p>
+           Rub the leg with garlic powder, ground black pepper, and remaining salt. Let stand for 15 minutes to absorb the rub.
+          </p>
+           <p>
+           Heat a clean large cooking pot (preferably with cover) and pour-in cooking oil.
+          </p>
+           <p>
+           When the oil becomes hot, deep fry the rubbed pork leg. Continue cooking in medium heat until one side becomes crispy, and then cautiously flip the leg to crisp the other side. Note: Be extra careful in doing this procedure.
+          </p>
+           <p>
+           Turn-off the heat; remove the crispy pork leg; and transfer it to a wide serving plate.
+          </p>
+           <p>
+           Serve with atcharang papaya and soy sauce – vinegar dipping sauce.
+          </p>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Pinoy Pork Barbeque</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pork/porkbbq.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            6 lbs pork, sliced into 1inch wide and 1/4inch thick<br>
+
+            2 liters7-up<br>
+
+            soy sauce<br>
+
+            vinegar<br>
+
+            2 tablespoon ground pepper<br>
+
+            6 cups brown sugar<br>
+
+            chili peppers<br>
+
+            oyster sauce<br>
+
+            2 cups banana ketchup<br>
+
+            sesame oil<br>
+
+            For the spiced vinegar dip<br>
+            1 cup white vinegar<br>
+
+            3 cloves garlic, minced<br>
+
+            1/2 onion, chopped<br>
+
+            1/8 ground pepper<br>
+
+            1/4 tsp salt<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Rinse pork strips and drain well. Pat dry.
+          </p>
+           <p>
+            In a large bowl, combine 7-up, soy sauce, vinegar, brown sugar, black pepper, garlic, chili peppers and 1 cup of the oyster sauce.
+          </p>
+           <p>
+            Add pork and massage meat to fully incorporate. Marinate, turning meat once or twice, in the refrigerator for at least 4 hours or overnight for best results
+          </p>
+           <p>
+             In a bowl, combine remaining 1 cup of oyster sauce, banana ketchup, and sesame oil. Set aside.
+          </p>
+           <p>
+            Thread 2 to 3 meat slices onto each skewer. Grill meat over hot coals for about 2 to 3 minutes each side.
+          </p>
+           <p>
+            When pork starts to lose its pink, baste with oyster sauce-ketchup mixture. Continue to grill and baste, turning on sides, until meat is cooked through. Remove from heat and serve as is or with spicy vinegar dip.
+          </p>
+           <p>
+            For the vinegar dip, combine vinegar, garlic, onion, pepper and salt on a bowl
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Sinigang na Baboy with Gabi</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pork/sinigang.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+           2 lbs. pork<br>
+
+            kangkong leaves<br>
+
+            green chili pepper<br>
+
+            2 pieces tomato<br>
+
+            1 cup sliced radish<br>
+
+            10 to 12 pieces beans<br>
+
+            onion<br>
+
+            15 pieces okra<br>
+
+            2 pcs. taro<br>
+
+            8 cups water<br>
+
+            Knorr Sinigang sa Sampaloc Mix Original<br>
+
+            3 tbsp. fish sauce<br>
+
+            1/4 tsp. ground pepper<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+             Pour water into a cooking pot. Let it boil
+          </p>
+          <p>
+            Add onion and tomato. Boil for 5 to 8 minutes
+          </p>
+          <p>
+            Put the pork in the cooking pot.Boil for 25 minutes
+          </p>
+          <p>
+            Add the taro. Cover and continue to boil for 30 minutes.
+          </p>
+          <p>
+            Add Knorr Sinigang sa Sampaloc mix, fish sauce, and ground black pepper; stir.
+          </p>
+          <p>
+            Put the radish in. Cook for 3 to 5 minutes.
+          </p>
+          <p>
+            Add the chili peppers, okra, and snake beans. Cook for 7 minutes.
+          </p>
+          <p>
+            Add the kangkong. Cover the cooking pot and turn off the heat. Let it stay covered for 5 minutes.
+          </p>
+          <p>
+            Transfer to as serving bowl. Serve with a small bowl with patis and spicy chili.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
