@@ -1,0 +1,138 @@
+/*Weng*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+* {
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+h2 {
+  color: #000;
+  margin: 2rem 0 .5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+img {
+  display: relative;
+    border: 1px;
+    width: 100%;
+  
+}
+
+/*Card*/
+
+.bestrecipe {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* see notes below */
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1rem;
+}
+#relatedVideo{
+   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* see notes below */
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1rem; 
+}
+.result {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* see notes below */
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1rem;
+}
+
+.card {
+  height: 900px;
+  width: 300px;
+  /*background: red;*/
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  padding: .5rem;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  color: #5d5e5e;
+} /* li item */
+
+.card-content {
+    font-size: .75rem;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.panel.card-panel .panel-header {
+    background-color: #ffffff;
+    font-size: .75rem;
+    font-weight: 400;
+    height: 25px !important;
+}
+
+.panel.card-panel .panel-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.category {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+footer.footerCard {
+  border-top: 2px solid #e7e7e7;
+  margin: .5rem 0 0;
+  min-height: 30px;
+  font-size: 14px;
+}
+
+.category {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    color: #fff;
+    background: #e74c3c;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.category__01 {
+  background-color: #50c6db;
+}
+
+.post-meta {
+  margin-top: .5rem;
+}
+
+.twitter {
+  margin-left: .5rem;
+}
+
+.ScrollStyle
+{
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+

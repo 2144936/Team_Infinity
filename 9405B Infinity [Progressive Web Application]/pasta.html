@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rookie Cookery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/card.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-no-repeat bg-cover bg-center-center bg-fixed" style="background-image: url(./images/bg4.jpg);">
+
+    
+    <nav class="navbar navbar-expand-sm p-3 bg-secondary text-white">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/new.png" alt="logo" height=70 style="width:150px;">
+        </a>
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <!-- Dropdowns -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="recipe.html" id="navbardrop" data-toggle="dropdown">Recipe</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="pork.html">Pork </a>
+                    <a class="dropdown-item" href="chicken.html">Chicken</a>
+                    <a class="dropdown-item" href="seafood.html">Seafood</a>
+                    <a class="dropdown-item" href="pasta.html">Pasta</a>
+                    <a class="dropdown-item" href="beef.html">Beef</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="search.html">Search Recipes</a>
+            </li>
+        </ul>
+    </nav>
+
+  
+    <!-- insert here-->
+     <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3 md-m-15px-tb">
+                <h2>Spicy Tomato Pasta</h2>
+  <!-- Button for image -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pasta/spicytomato.jpg" class="img-thumbnail" alt="spicytomato" width="304" height="236"> 
+</button>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 lb. rigatoni<br>
+            2 Tbls. extra virgin olive oil<br>
+            1/2 large yellow onion, diced<br>
+            2 cloves garlic, minced<br>
+            salt and pepper to taste<br>
+            1/2 tsp. red pepper flakes<br>
+            1 lb. ground hot Italian sausage<br>
+            1/4 cup red wine<br>
+            2 Tbsp. balsamic vinegar<br>
+            1 28-oz. can crushed tomatoes<br>
+            2 cups fresh arugula, chopped<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Cook pasta in a large pot of very salty water
+            until al dente. Drain pasta, set aside, and
+            return the empty pot to the stove.
+          </p>
+          <p>
+            Heat olive oil in the pot over medium heat.
+            Add diced onion and minced garlic cook
+            until onions are translucent, about 6 minutes. 
+          </p>
+          <p>
+            Add salt, pepper, and red pepper flakes to
+            pot and stir to combine. 
+          </p>
+          <p>
+            Add hot Italian sausage to pot and break it
+            up with a wooden spoon as it cooks. Cook 8
+            minutes or until sausage is cooked through. 
+          </p>
+          <p>
+            Add red wine to pot to deglaze. Be sure to
+            scrape the browned bits off the bottom of
+            the pot! 
+          </p>
+          <p>
+            Add balsamic vinegar and crushed tomatoes
+            to sauce, stir, and bring to a simmer. 
+          </p>
+          <p>
+            Stir arugula and cooked pasta into sauce
+            until sauce evenly coats the pasta. Serve
+            immediately.
+          </p>
+          <p>
+            <b>Ready in:</b> 30 Minutes
+          </p>
+          <p>
+            <b>Yield:</b> Serves 4-6
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            <div class="col-md-3 md-m-15px-tb">
+               <h2>Pesto, Mushroom, and Tomato cavatappi</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pasta/pesto.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 lb. cavatappi pasta<br>
+            1 clove garlic, minced<br>
+            2 Tbsp. olive oil<br>
+            2 cups sliced baby portobello mushrooms<br>
+            1 cup chopped tomatoes<br>
+            1/4 cup basil pesto<br>
+            salt and pepper to taste<br>
+            1/4 cup grated parmesan cheese (optional)<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+           Cook pasta in very salty water until al
+          dente. Drain and set aside
+          </p>
+          <p>
+           Heat olive oil in a large skillet over
+          medium heat. 
+          </p>
+          <p>
+           Add garlic and mushrooms to oil and
+           saute until fragrant and browned,
+           about 2 minutes.  
+          </p>
+          <p>
+            Add salt, pepper, and tomatoes to
+            skillet and cook for 2-3 minutes. 
+          </p>
+          <p>
+            Add pesto and drained pasta to
+            skillet and toss to coat the pasta
+            evenly with the sauce. Taste and add
+            seasoning if necessary. 
+          </p>
+          <p>
+            Top pasta with fresh parmesan
+            cheese for garnish and serve
+            immediately.
+          </p>
+          <p>
+            <b>Ready in:</b> 30 Minutes
+          </p>
+          <p>
+            <b>Yield:</b> Serves 4-6
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            <div class="col-md-3 md-m-15px-tb">
+                <h2>Spicy Sausage and Broccoli Orecchiette</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pasta/spicysauce.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1/2 lb. ground hot Italian sausage<br>
+            1/2 lb. orecchiette pasta<br>
+            1 head broccoli, cut into florets<br>
+            1/4 tsp. red pepper flakes<br>
+            1/2 cup heavy cream<br>
+            1/2 cup grated parmesan cheese<br>
+            salt and pepper to taste<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Heat a large nonstick skillet over medium heat
+            and add sausage to skillet. Break sausage up
+            with a wooden spoon and cook for 7-10 minutes or until cooked through. Drain any grease
+            and set sausage aside.
+          </p>
+          <p>
+            Cook the pasta in very salty water. When pasta
+            is 2-3 minutes away from al dente, add broccoli
+            florets to water to cook. When pasta is al
+            dente, drain pasta and broccoli and set aside. 
+          </p>
+          <p>
+            Return pasta pot to stove, add cream, and heat
+            cream over medium heat until simmering. 
+          </p>
+          <p>
+            Remove cream from heat and add pasta, broccoli, cooked sausage, red pepper flakes, and
+            parmesan cheese and stir until cheese has
+            melted. Add salt and pepper to taste and serve
+            immediately
+          </p>
+          <p>
+            <b>Ready in:</b> 30 Minutes
+          </p>
+          <p>
+            <b>Yield:</b> Serves 4-6
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3 md-m-15px-tb">
+                <h2>Mushroom spinach Lasagna</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pasta/mushroom.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1/2 lb. lasagna noodles
+            3 Tbsp. Olive Oil
+            1/2 large yellow onion,
+             diced
+            2 cloves garlic, minced
+            Salt and pepper to taste
+            1/2 lb. baby portobello
+             mushrooms, sliced
+            3 Tbsp. flour
+            2 2
+            /3
+             cups chicken stock
+            3/4 cup milk (I use skim)
+            3 cups spinach
+            3.5 cups shredded
+             parmesan cheese 
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Cook noodles in very salty water until 4 minutes less than
+           al dente.
+          </p>
+          <p>Cook noodles in very salty water until 4 minutes less than
+            al dente.
+          </p>
+          <p>
+            Stir in flour to form a roux. Cook for 1 minute.
+          </p>
+          <p>
+            Slowly add stock to pan, stirring constantly to break up
+            the roux. Once all stock is incorporated, add milk to sauce,
+            stir, and simmer for 10-15 minutes until thickened.
+          </p>
+          <p>
+            Add spinach to sauce and cook until wilted, about 5 mins.
+          </p>
+          <p>
+            Remove sauce from heat and add 1.5 cups of the
+            parmesan. Stir until cheese has melted.
+            (Reserve remaining cheese for assembling the lasagna)
+          </p>
+          <p>
+            To assemble, spread a thin layer of sauce on the bottom
+            of a 9 x 13 baking dish to prevent sticking. Lay lasagna
+            noodles down, then a layer of sauce, then a layer of
+            parmesan cheese, and repeat until the pan is full. End with a layer of cheese on top.
+          </p>
+          <p>
+            Bake at 375 for 30-35 minutes or until cheese is melted and bubbly.
+          </p>
+          <p>
+            <b>Ready in:</b> 1 Hour
+          </p>
+          <p>
+            <b>Yield:</b> Serves 4-6
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            <div class="col-md-3 md-m-15px-tb">
+                <h2>One Pot creamy corn and Tomato Pasta</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pasta/onepot.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 lb. orecchiette pasta<br>
+            1/4 cup extra virgin olive oil<br>
+            salt and pepper to taste<br>
+            2 cups sweet corn kernels<br>
+            2 cups quartered cherry tomatoes<br>
+            1/4 cup cream cheese<br>
+            1 cup chopped fresh cilantro<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Cook pasta in very salty water until al dente.
+            Drain and set aside. Return pan to stove.
+          </p>
+          <p>
+            Heat olive oil in pan over medium-high heat.
+          </p>
+          <p>
+            Add sweet corn and cherry tomatoes and saute until corn is cooked through, about 3 minutes.
+          </p>
+          <p>
+            Add cream cheese to pan and stir until cream cheese is melted, about 2 minutes. 
+          </p>
+          <p>
+            Add salt and pepper to taste
+          </p>
+          <p>
+            Return pasta to pan and toss to coat with sauce.
+          </p>
+          <p>
+            Reserve 2 tablespoons of chopped cilantro for garnish. Toss remaining cilantro with pasta
+          </p>
+          <p>
+            Serve immediately and top with reserved cilantro for garnish.
+          </p>
+          <p>
+            <b>Ready in:</b> 30 Minutes
+          </p>
+          <p>
+            <b>Yield:</b> Serves 4-6
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="col-md-3 md-m-15px-tb">
+                <h2>Chicken Enchilada Lasagna</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pasta/lasagna.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 lb. rigatoni<br>
+            2 Tbls. extra virgin olive oil<br>
+            1/2 large yellow onion, diced<br>
+            2 cloves garlic, minced<br>
+            salt and pepper to taste<br>
+            1/2 tsp. red pepper flakes<br>
+            1 lb. ground hot Italian sausage<br>
+            1/4 cup red wine<br>
+            2 Tbsp. balsamic vinegar<br>
+            1 28-oz. can crushed tomatoes<br>
+            2 cups fresh arugula, chopped<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Cook pasta in a large pot of very salty water
+            until al dente. Drain pasta, set aside, and
+            return the empty pot to the stove.
+          </p>
+          <p>
+            Heat olive oil in the pot over medium heat.
+            Add diced onion and minced garlic cook
+            until onions are translucent, about 6 minutes. 
+          </p>
+          <p>
+            Add salt, pepper, and red pepper flakes to
+            pot and stir to combine. 
+          </p>
+          <p>
+            Add hot Italian sausage to pot and break it
+            up with a wooden spoon as it cooks. Cook 8
+            minutes or until sausage is cooked through. 
+          </p>
+          <p>
+            Add red wine to pot to deglaze. Be sure to
+            scrape the browned bits off the bottom of
+            the pot! 
+          </p>
+          <p>
+            Add balsamic vinegar and crushed tomatoes
+            to sauce, stir, and bring to a simmer. 
+          </p>
+          <p>
+            Stir arugula and cooked pasta into sauce
+            until sauce evenly coats the pasta. Serve
+            immediately.
+          </p>
+          <p>
+            <b>Ready in:</b> 30 Minutes
+          </p>
+          <p>
+            <b>Yield:</b> Serves 4-6
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3 md-m-15px-tb">
+               <h2>Creamy pea and Pesto Tortellini</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pasta/creamypea.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 lb. rigatoni<br>
+            2 Tbls. extra virgin olive oil<br>
+            1/2 large yellow onion, diced<br>
+            2 cloves garlic, minced<br>
+            salt and pepper to taste<br>
+            1/2 tsp. red pepper flakes<br>
+            1 lb. ground hot Italian sausage<br>
+            1/4 cup red wine<br>
+            2 Tbsp. balsamic vinegar<br>
+            1 28-oz. can crushed tomatoes<br>
+            2 cups fresh arugula, chopped<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Cook pasta in a large pot of very salty water
+            until al dente. Drain pasta, set aside, and
+            return the empty pot to the stove.
+          </p>
+          <p>
+            Heat olive oil in the pot over medium heat.
+            Add diced onion and minced garlic cook
+            until onions are translucent, about 6 minutes. 
+          </p>
+          <p>
+            Add salt, pepper, and red pepper flakes to
+            pot and stir to combine. 
+          </p>
+          <p>
+            Add hot Italian sausage to pot and break it
+            up with a wooden spoon as it cooks. Cook 8
+            minutes or until sausage is cooked through. 
+          </p>
+          <p>
+            Add red wine to pot to deglaze. Be sure to
+            scrape the browned bits off the bottom of
+            the pot! 
+          </p>
+          <p>
+            Add balsamic vinegar and crushed tomatoes
+            to sauce, stir, and bring to a simmer. 
+          </p>
+          <p>
+            Stir arugula and cooked pasta into sauce
+            until sauce evenly coats the pasta. Serve
+            immediately.
+          </p>
+          <p>
+            <b>Ready in:</b> 30 Minutes
+          </p>
+          <p>
+            <b>Yield:</b> Serves 4-6
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            <div class="col-md-3 md-m-15px-tb">
+                <h2>Shellfish Spaghetti</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pasta/shellfish.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 lb. rigatoni<br>
+            2 Tbls. extra virgin olive oil<br>
+            1/2 large yellow onion, diced<br>
+            2 cloves garlic, minced<br>
+            salt and pepper to taste<br>
+            1/2 tsp. red pepper flakes<br>
+            1 lb. ground hot Italian sausage<br>
+            1/4 cup red wine<br>
+            2 Tbsp. balsamic vinegar<br>
+            1 28-oz. can crushed tomatoes<br>
+            2 cups fresh arugula, chopped<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Cook pasta in a large pot of very salty water
+            until al dente. Drain pasta, set aside, and
+            return the empty pot to the stove.
+          </p>
+          <p>
+            Heat olive oil in the pot over medium heat.
+            Add diced onion and minced garlic cook
+            until onions are translucent, about 6 minutes. 
+          </p>
+          <p>
+            Add salt, pepper, and red pepper flakes to
+            pot and stir to combine. 
+          </p>
+          <p>
+            Add hot Italian sausage to pot and break it
+            up with a wooden spoon as it cooks. Cook 8
+            minutes or until sausage is cooked through. 
+          </p>
+          <p>
+            Add red wine to pot to deglaze. Be sure to
+            scrape the browned bits off the bottom of
+            the pot! 
+          </p>
+          <p>
+            Add balsamic vinegar and crushed tomatoes
+            to sauce, stir, and bring to a simmer. 
+          </p>
+          <p>
+            Stir arugula and cooked pasta into sauce
+            until sauce evenly coats the pasta. Serve
+            immediately.
+          </p>
+          <p>
+            <b>Ready in:</b> 30 Minutes
+          </p>
+          <p>
+            <b>Yield:</b> Serves 4-6
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            <div class="col-md-3 md-m-15px-tb">
+                <h2>Chicken Cordon Bleu pasta</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pasta/chickencordon.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 lb. rigatoni<br>
+            2 Tbls. extra virgin olive oil<br>
+            1/2 large yellow onion, diced<br>
+            2 cloves garlic, minced<br>
+            salt and pepper to taste<br>
+            1/2 tsp. red pepper flakes<br>
+            1 lb. ground hot Italian sausage<br>
+            1/4 cup red wine<br>
+            2 Tbsp. balsamic vinegar<br>
+            1 28-oz. can crushed tomatoes<br>
+            2 cups fresh arugula, chopped<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Cook pasta in a large pot of very salty water
+            until al dente. Drain pasta, set aside, and
+            return the empty pot to the stove.
+          </p>
+          <p>
+            Heat olive oil in the pot over medium heat.
+            Add diced onion and minced garlic cook
+            until onions are translucent, about 6 minutes. 
+          </p>
+          <p>
+            Add salt, pepper, and red pepper flakes to
+            pot and stir to combine. 
+          </p>
+          <p>
+            Add hot Italian sausage to pot and break it
+            up with a wooden spoon as it cooks. Cook 8
+            minutes or until sausage is cooked through. 
+          </p>
+          <p>
+            Add red wine to pot to deglaze. Be sure to
+            scrape the browned bits off the bottom of
+            the pot! 
+          </p>
+          <p>
+            Add balsamic vinegar and crushed tomatoes
+            to sauce, stir, and bring to a simmer. 
+          </p>
+          <p>
+            Stir arugula and cooked pasta into sauce
+            until sauce evenly coats the pasta. Serve
+            immediately.
+          </p>
+          <p>
+            <b>Ready in:</b> 30 Minutes
+          </p>
+          <p>
+            <b>Yield:</b> Serves 4-6
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="col-md-3 md-m-15px-tb">
+                <h2>Gluten-free blt alfredo ravioli</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <img src="resource/pasta/glutenfree.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Lets Start! Enjoy Cooking</h2>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Ingredients</h4>
+          <p>
+            1 lb. rigatoni<br>
+            2 Tbls. extra virgin olive oil<br>
+            1/2 large yellow onion, diced<br>
+            2 cloves garlic, minced<br>
+            salt and pepper to taste<br>
+            1/2 tsp. red pepper flakes<br>
+            1 lb. ground hot Italian sausage<br>
+            1/4 cup red wine<br>
+            2 Tbsp. balsamic vinegar<br>
+            1 28-oz. can crushed tomatoes<br>
+            2 cups fresh arugula, chopped<br>
+          </p>
+
+          <h4>Instructions</h4>
+          <p>
+            Cook pasta in a large pot of very salty water
+            until al dente. Drain pasta, set aside, and
+            return the empty pot to the stove.
+          </p>
+          <p>
+            Heat olive oil in the pot over medium heat.
+            Add diced onion and minced garlic cook
+            until onions are translucent, about 6 minutes. 
+          </p>
+          <p>
+            Add salt, pepper, and red pepper flakes to
+            pot and stir to combine. 
+          </p>
+          <p>
+            Add hot Italian sausage to pot and break it
+            up with a wooden spoon as it cooks. Cook 8
+            minutes or until sausage is cooked through. 
+          </p>
+          <p>
+            Add red wine to pot to deglaze. Be sure to
+            scrape the browned bits off the bottom of
+            the pot! 
+          </p>
+          <p>
+            Add balsamic vinegar and crushed tomatoes
+            to sauce, stir, and bring to a simmer. 
+          </p>
+          <p>
+            Stir arugula and cooked pasta into sauce
+            until sauce evenly coats the pasta. Serve
+            immediately.
+          </p>
+          <p>
+            <b>Ready in:</b> 30 Minutes
+          </p>
+          <p>
+            <b>Yield:</b> Serves 4-6
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+            </div>
+</body>
+
+</html>
